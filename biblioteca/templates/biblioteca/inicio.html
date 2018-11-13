@@ -3,10 +3,46 @@
 <head>
 	<title>Biblioteca IFPB - Soledade</title>
 	<meta charset="utf-8">
+	<style>
+		table {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			border: 1px solid black;
+			text-align: left;
+			padding: 8px;
+		}
+		tr:nth-child(even){
+			background-color: #dddddd; 
+		}
+	</style>
 </head>
 <body style="background-color: powderblue;">
 	<h1 style="text-align: center;">Biblioteca IFPB - Campus Soledade</h1>
 	<p style="text-align: center; font-family: verdana">Informatização da planilha de livros e criação da biblioteca virtual</p>
+	<h2 style="text-align: center">Livros adicionados até agora:</h2>
+	
+	<table>
+		{% for livro in livrosCadastrados %}
+		<tr>
+			<th>Data de cadastro</th>
+			<th>Cód</th>
+			<th>Título</th>
+			<th>Editora</th>
+			<th>Categoria</th>
+		</tr>
+		<tr>
+			<td>{{ livro.data_criacao }}</td>
+			<td>{{ livro.codigo }}</td>
+			<td>{{ livro.titulo }}</td>
+			<td>{{ livro.editora }}</td>
+			<td>{{ livro.categoria }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	
 
 </body>
 </html>

@@ -72,7 +72,7 @@ class Livros(models.Model):
 		self.save()
 
 	def __str__(self):
-		return '%s - %s' % (self.codigo, self.titulo)
+		return '%s - %s - %s' % (self.data_criacao, self.codigo, self.titulo)
 
 	def __unicode__(self):
-		return '%s - %s' % (self.codigo, self.titulo)		
+		return '%s - %s - %s' % (self.data_criacao, self.codigo, self.titulo)		
