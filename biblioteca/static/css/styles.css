@@ -1,0 +1,40 @@
+body {
+	background-color: #00803e;
+}
+.cabecalho {
+	background-color: #00cc66;
+	border: 1px solid black;
+	text-align: center;
+	font-family: Lobster;
+	padding: 15px;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+.informacao {
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-family: 'Nixie One';
+	padding: 30px;	
+}
+h1 {
+	font-size: 300%;
+}
+.conteudo {
+	background-color: #00cc66;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+td, th {
+	border: 1px solid black;
+	text-align: left;
+	padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #ccffe5;
+}
